@@ -24,6 +24,20 @@ export const metadata: Metadata = {
     title: "Saad Khan | Software Engineer & Product Innovator",
     description: "Portfolio of Saad Khan - Building innovative solutions at the intersection of technology and business.",
     type: "website",
+    images: [
+      {
+        url: "/portfolio_sketch.png",
+        width: 1200,
+        height: 630,
+        alt: "Saad Khan - Software Engineer & Product Innovator",
+      },
+    ],
+  },
+  twitter: {
+    card: "summary_large_image",
+    title: "Saad Khan | Software Engineer & Product Innovator",
+    description: "Portfolio of Saad Khan - Building innovative solutions at the intersection of technology and business.",
+    images: ["/portfolio_sketch.png"],
   },
 };
 
