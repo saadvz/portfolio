@@ -74,7 +74,7 @@ export default function Hero() {
             className="text-lg max-w-md leading-relaxed"
             style={{ color: "var(--muted)" }}
           >
-            MS Analytics @ Georgia Tech. Software Developer with rock-solid experience 
+            MS Analytics @ Georgia Tech. Engineer & Developer with rock-solid experience 
             in building complex applications and innovative products with modern technologies.
           </motion.p>
 

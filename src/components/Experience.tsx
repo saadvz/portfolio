@@ -108,7 +108,7 @@ const education = [
     school: "Georgia Institute of Technology",
     degree: "MS Analytics",
     location: "Atlanta, GA",
-    period: "Expected May 2028",
+    period: "May 2028",
     icon: GraduationCap,
     logo: "/gt_logo.png",
   },

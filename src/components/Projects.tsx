@@ -19,7 +19,7 @@ const projects = [
     link: "https://khanex.ai/",
     github: "#",
     featured: true,
-    period: "Aug 2025 - Present",
+    period: "2025",
   },
   {
     id: 2,
@@ -49,7 +49,7 @@ const projects = [
     ],
     github: "https://github.com/saadvz/Analyzing-Pandemic_Responses_Project",
     featured: true,
-    period: "April 2024",
+    period: "2024",
   },
   {
     id: 4,
@@ -62,7 +62,7 @@ const projects = [
       "Stakeholder requirement alignment",
       "2nd place in NJIT Capstone Competition",
     ],
-    period: "Sep 2024 - Dec 2024",
+    period: "2024",
   },
   {
     id: 5,
@@ -76,7 +76,7 @@ const projects = [
       "Validated model performance through Mean Squared Error and RMSE metrics",
     ],
     github: "https://github.com/saadvz/QB_Touchdown_Predictor",
-    period: "Aug 2023",
+    period: "2023",
   },
   {
     id: 6,
@@ -89,7 +89,7 @@ const projects = [
       "Built interactive Tableau dashboards using provided company data",
       "Delivered findings in a 5-minute video presentation demonstrating data storytelling",
     ],
-    period: "Aug 2023",
+    period: "2023",
   },
   {
     id: 7,
@@ -120,7 +120,7 @@ const verizonProjects = [
       "Custom Android Capacitor plugins in Java for system-level APIs",
       "Cross-platform push notifications with FCM/APNs integration",
     ],
-    period: "June 2024 - Dec 2024",
+    period: "2024-2025",
     verizonProject: true,
   },
   {
@@ -134,7 +134,7 @@ const verizonProjects = [
       "Intelligent outage detection algorithm distinguishing power vs. network failures",
       "Real-time push notification system with APNs and FCM integration",
     ],
-    period: "June 2024 - Dec 2024",
+    period: "2025",
     verizonProject: true,
   },
   {
@@ -148,7 +148,7 @@ const verizonProjects = [
       "Verizon Cell Tower API integration for signal strength analysis",
       "Vector mathematics for signal quality ranking and visualization",
     ],
-    period: "June 2024 - Dec 2024",
+    period: "2025",
     verizonProject: true,
   },
   {
@@ -162,7 +162,7 @@ const verizonProjects = [
       "JWT-based authentication with automatic token refresh (15-min expiry)",
       "Forward-to-Save automation for email-based document sorting",
     ],
-    period: "June 2024 - Dec 2024",
+    period: "2025",
     verizonProject: true,
   },
 ];
@@ -329,7 +329,7 @@ export default function Projects() {
             className="text-4xl md:text-5xl font-bold mt-2"
             style={{ color: "var(--foreground)" }}
           >
-            Featured Projects
+            Personal Projects
           </h2>
           <p 
             className="mt-4 text-lg max-w-2xl"
