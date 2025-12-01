@@ -111,9 +111,9 @@ const projects = [
 const verizonProjects = [
   {
     id: 101,
-    title: "HomeSandbox",
-    subtitle: "Consumer Innovation Platform",
-    description: "Full-stack cross-platform mobile application serving as Verizon's internal innovation lab and demo platform. Consolidates multiple consumer product concepts including home networking, cloud storage, family safety, identity protection, and AI assistants into a unified native app deployed to iOS and Android.",
+    title: "Innovation Lab Platform",
+    subtitle: "Consumer Product Demo Platform",
+    description: "Full-stack cross-platform mobile application serving as an internal innovation lab and demo platform. Consolidates multiple consumer product concepts including home networking, cloud storage, family safety, identity protection, and AI assistants into a unified native app deployed to iOS and Android.",
     technologies: ["React", "TypeScript", "Ionic", "Capacitor", "Firebase", "Node.js", "Tailwind CSS"],
     highlights: [
       "Multi-tenant AI backend with Flowise and custom MMRAG service",
@@ -125,8 +125,8 @@ const verizonProjects = [
   },
   {
     id: 102,
-    title: "Backup Internet (eSIM)",
-    subtitle: "Intelligent Connectivity Failover",
+    title: "Network Failover System",
+    subtitle: "Intelligent Connectivity Backup",
     description: "Cross-platform mobile feature providing seamless internet backup during broadband outages. Automatically detects outage type (power vs. network), guides users through enabling mobile hotspot backup, and notifies when connectivity is restored, all with zero additional data charges.",
     technologies: ["React", "TypeScript", "Ionic", "Capacitor", "Firebase", "Java", "FCM"],
     highlights: [
@@ -139,13 +139,13 @@ const verizonProjects = [
   },
   {
     id: 103,
-    title: "Homeview (HomeSense)",
-    subtitle: "Router Placement Optimization",
-    description: "Mobile-first guided setup experience for Verizon Fixed Wireless Access customers using real-time GPS tracking, Mapbox integration, and cellular signal analysis to determine optimal router placement location before installation.",
+    title: "Router Optimization Assistant",
+    subtitle: "Signal Analysis & Placement Tool",
+    description: "Mobile-first guided setup experience for fixed wireless access customers using real-time GPS tracking, Mapbox integration, and cellular signal analysis to determine optimal router placement location before installation.",
     technologies: ["React", "TypeScript", "Mapbox GL", "Capacitor Geolocation", "OAuth2"],
     highlights: [
       "Real-time GPS tracking with sub-meter accuracy for spot-checking",
-      "Verizon Cell Tower API integration for signal strength analysis",
+      "Cell tower API integration for signal strength analysis",
       "Vector mathematics for signal quality ranking and visualization",
     ],
     period: "2025",
@@ -153,8 +153,8 @@ const verizonProjects = [
   },
   {
     id: 104,
-    title: "DocuDojo",
-    subtitle: "AI Document Intelligence",
+    title: "Document Intelligence Platform",
+    subtitle: "AI-Powered Document Assistant",
     description: "AI-powered document intelligence feature enabling natural language queries across personal cloud storage. Uses Multimodal RAG pipeline to extract and synthesize information from documents, supporting questions like 'What's my car insurance premium?' across all stored files.",
     technologies: ["React", "TypeScript", "Firebase", "Node.js", "RAG", "LLM", "JWT"],
     highlights: [
@@ -417,13 +417,13 @@ export default function Projects() {
                   className="text-sm font-semibold tracking-widest uppercase"
                   style={{ color: "var(--accent)" }}
                 >
-                  Verizon Innovation Lab
+                  Enterprise Innovation
                 </span>
                 <h3 
                   className="text-3xl md:text-4xl font-bold"
                   style={{ color: "var(--foreground)" }}
                 >
-                  Enterprise Projects
+                  Corporate Projects
                 </h3>
               </div>
             </div>
@@ -431,7 +431,7 @@ export default function Projects() {
               className="text-lg max-w-2xl"
               style={{ color: "var(--muted)" }}
             >
-              Internal innovation projects developed during my time at Verizon, 
+              Internal innovation projects developed during my corporate experience, 
               showcasing full-stack development, mobile engineering, and AI integration.
             </p>
           </motion.div>
@@ -450,7 +450,7 @@ export default function Projects() {
                   border: "1px solid var(--border)"
                 }}
               >
-                {/* Verizon badge */}
+                {/* Enterprise badge */}
                 <div 
                   className="absolute top-4 right-4 px-3 py-1 text-xs font-semibold rounded-full flex items-center gap-1.5"
                   style={{ 
@@ -459,7 +459,7 @@ export default function Projects() {
                   }}
                 >
                   <img src="/vz_logo.png" alt="" className="w-3 h-3 object-contain brightness-0 invert" />
-                  Verizon
+                  Enterprise
                 </div>
 
                 <div className="grid md:grid-cols-2 gap-8">
