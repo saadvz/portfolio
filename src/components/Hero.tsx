@@ -63,7 +63,7 @@ export default function Hero() {
             className="text-sm font-semibold tracking-widest uppercase"
             style={{ color: "var(--muted)" }}
           >
-            Product Engineer @ Verizon
+            Founding Engineer @ VERA
           </motion.p>
 
           {/* Description */}
@@ -74,8 +74,8 @@ export default function Hero() {
             className="text-lg max-w-md leading-relaxed"
             style={{ color: "var(--muted)" }}
           >
-            MS Analytics @ Georgia Tech. Engineer & Developer with rock-solid experience 
-            in building complex applications and innovative products with modern technologies.
+            Technical product engineer turning ambiguous ideas into AI- and cloud-powered
+            products: voice agents, MCP tools, and SaaS workflows. MS Computer Science @ Georgia Tech.
           </motion.p>
 
           {/* CTA Button */}
