@@ -5,28 +5,57 @@ import { Building2, GraduationCap, Award, Code, Briefcase, ArrowRight, Download 
 import Image from "next/image";
 import Link from "next/link";
 
-const experiences = [
+type Experience = {
+  company: string;
+  location: string;
+  logo?: string;
+  roles: { title: string; period: string; current: boolean }[];
+  highlights: string[];
+  icon: typeof Building2;
+  projectsLink?: string;
+};
+
+const experiences: Experience[] = [
+  {
+    company: "VERA",
+    location: "AI Voice Platform for Caregivers",
+    roles: [
+      {
+        title: "Founding Engineer",
+        period: "Feb 2026 - Present",
+        current: true,
+      },
+    ],
+    highlights: [
+      "Owned the product from prototype to a production caregiver wellness platform with a projected $1M ARR",
+      "Shipped the core caregiver journey: onboarding, phone verification and consent, scheduled check-in calls, post-call summaries, Shopify billing, and family sharing",
+      "Designed the production voice agent (Pipecat, Gemini Live, Twilio) with barge-in, voicemail handling, multilingual calls, Voice ID, and privacy hangups",
+      "Built AWS infrastructure (EC2, S3, Cognito, Terraform), CI/CD, PR previews, evals, synthetic canaries, and a stakeholder metrics dashboard",
+      "Presented weekly shareholder updates on growth, conversion, call quality, and risk",
+    ],
+    icon: Building2,
+  },
   {
     company: "Verizon",
     location: "Basking Ridge, NJ",
     logo: "/vz_logo.png",
     roles: [
       {
-        title: "Product Engineer",
-        period: "June 2025 - December 2025",
-        current: true,
+        title: "Product Engineer (Full-Time)",
+        period: "Jun 2025 - Feb 2026",
+        current: false,
       },
       {
         title: "Product Innovation Co-Op",
-        period: "June 2024 - December 2024",
+        period: "Jun 2024 - Dec 2024",
         current: false,
       },
     ],
     highlights: [
-      "Translated three early-stage technology concepts into production-ready proposals",
-      "Reduced development costs by 90% with platform-agnostic sandbox environment",
-      "Earned Verizon Spotlight Award for AI-integrated Android app innovation",
-      "Increased product approval rates by 60% through rapid prototyping",
+      "Turned ambiguous AI and cloud concepts into stakeholder-ready prototypes, advancing 3 ideas into leadership proposals",
+      "Built a platform-agnostic prototyping sandbox, cutting development costs by 90% and raising approval rates by 60%",
+      "Earned the Verizon Spotlight Award for an AI-integrated Android app mirroring Verizon Home workflows",
+      "Built an authenticated RAG-powered document search with Node.js, Firebase, and JWT",
     ],
     icon: Building2,
     projectsLink: "#verizon-projects",
@@ -106,7 +135,7 @@ const experiences = [
 const education = [
   {
     school: "Georgia Institute of Technology",
-    degree: "MS Analytics",
+    degree: "MS Computer Science",
     location: "Atlanta, GA",
     period: "May 2028",
     icon: GraduationCap,
@@ -124,9 +153,9 @@ const education = [
 ];
 
 const skills = {
-  languages: ["Python", "Java", "C#", "C++", "JavaScript", "TypeScript", "R", "SQL", "PostgreSQL", "HTML & CSS"],
-  frameworks: ["ReactJS", "Next.js", "NodeJS", "Flask", ".NET", "WPF", "Pandas", "NumPy", "Matplotlib"],
-  tools: ["Git", "Docker", "Tableau", "PowerBI", "Jupyter", "SAP", "Firebase", "JIRA", "AWS", "GCP"],
+  languages: ["TypeScript", "JavaScript", "Python", "C#", "Java", "SQL", "React", "Next.js", "Node.js", "REST APIs", "Webhooks"],
+  frameworks: ["LLM APIs", "RAG", "Voice AI", "MCP", "Pipecat", "Gemini Live", "Twilio", "ElevenLabs", "Claude", "Cursor"],
+  tools: ["AWS", "Terraform", "GCP", "Cloud Run", "Firebase", "Supabase", "BigQuery", "Docker", "Git", "Power BI", "JIRA"],
 };
 
 const certifications = [
@@ -397,7 +426,7 @@ export default function Experience() {
                     className="text-xs font-semibold uppercase tracking-wider mb-2"
                     style={{ color: "var(--muted)" }}
                   >
-                    Languages
+                    Engineering
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {skills.languages.map((skill) => (
@@ -420,7 +449,7 @@ export default function Experience() {
                     className="text-xs font-semibold uppercase tracking-wider mb-2"
                     style={{ color: "var(--muted)" }}
                   >
-                    Frameworks
+                    AI &amp; Voice
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {skills.frameworks.map((skill) => (
@@ -443,7 +472,7 @@ export default function Experience() {
                     className="text-xs font-semibold uppercase tracking-wider mb-2"
                     style={{ color: "var(--muted)" }}
                   >
-                    Tools
+                    Cloud &amp; Data
                   </p>
                   <div className="flex flex-wrap gap-2">
                     {skills.tools.map((skill) => (

@@ -66,18 +66,19 @@ export default function About() {
               style={{ color: "var(--muted)" }}
             >
               <p>
-                I&apos;m a software engineer and product innovator currently pursuing my 
-                MS in Analytics at Georgia Tech while working as a Product Engineer at Verizon.
+                I&apos;m a technical product engineer and the Founding Engineer at VERA, where I
+                build an AI voice platform that supports family caregivers. I&apos;m also pursuing my
+                MS in Computer Science at Georgia Tech.
               </p>
               <p>
-                My journey in tech started with a curiosity for how things work, which evolved 
-                into a passion for building products that make a real difference. From developing 
-                AI-integrated applications to creating full-stack SaaS platforms, I thrive on 
-                turning complex problems into elegant solutions.
+                Before VERA, I spent almost two years on Verizon&apos;s product innovation team turning
+                early concepts into prototypes leadership could say yes to, and I built KHANEX, an AI
+                SaaS platform for small businesses. Lately I&apos;m focused on agentic tools: MCP servers
+                and bring-your-own-agent products like Property Core.
               </p>
               <p>
-                When I&apos;m not coding, you&apos;ll find me volunteering with local organizations, 
-                contributing to open-source projects, or exploring the latest in AI and machine learning.
+                When I&apos;m not building, you&apos;ll find me volunteering with local organizations
+                or experimenting with the latest in AI.
               </p>
             </div>
 
@@ -88,7 +89,7 @@ export default function About() {
                   className="text-4xl font-bold"
                   style={{ color: "var(--accent)" }}
                 >
-                  5+
+                  4+
                 </div>
                 <div 
                   className="text-sm mt-1"

@@ -7,22 +7,119 @@ import { ExternalLink, Github, ArrowUpRight, ChevronDown, ChevronUp } from "luci
 const projects = [
   {
     id: 1,
-    title: "KHANEX",
-    subtitle: "B2B SaaS Platform",
-    description: "Built a multi-tenant B2B SaaS platform for custom AI solutions using Next.js, TypeScript, Supabase, and Stripe. Enables SMBs to automate workflows with 24/7 voice agents powered by ElevenLabs Conversational AI.",
-    technologies: ["Next.js", "TypeScript", "Supabase", "Stripe", "BigQuery", "ElevenLabs AI"],
+    title: "Property Core",
+    subtitle: "Bring-Your-Own AI Operations for Short-Term Rental Hosts",
+    description: "An AI operations platform that runs the day-to-day work of a short-term rental for a remote host. The host talks to their own agent (Grok Bot or Muse); Property Core gives that agent its instructions, keeps every record, and holds the guardrails in code. Piloting with several Airbnb hosts on live properties.",
+    technologies: ["TypeScript", "Node.js", "MCP", "Twilio SMS", "AI Agents"],
     highlights: [
-      "REST APIs integrating with POS systems (Clover, Toast, Square)",
-      "Real-time analytics dashboards with Recharts",
-      "Cloud Run webhook pipelines for data ingestion",
+      "Cleaner Core: reads booking calendars, texts cleaners for each turnover, releases door codes only after checkout",
+      "Supply Core: approval rules, spending caps, and go/hold decisions on every agent-built cart, with a full order log",
+      "Safety gates enforced in code and checked by CI on every pull request",
     ],
-    link: "https://khanex.ai/",
-    github: "#",
+    github: "https://github.com/saadvz/PropertyCore",
     featured: true,
-    period: "2025",
+    period: "2026",
   },
   {
     id: 2,
+    title: "KHANEX",
+    subtitle: "AI SaaS Platform for SMB Workflow Automation",
+    description: "Owned development of a multi-tenant B2B AI SaaS product, translating small-business workflow needs into AI-powered ordering, analytics, and automation features. Shipped automation that reduced customer operating costs by an average of $500/month.",
+    technologies: ["Next.js", "TypeScript", "Supabase", "Stripe", "BigQuery", "Cloud Run", "ElevenLabs"],
+    highlights: [
+      "REST APIs and webhook pipelines connecting ElevenLabs voice agents to Clover, Toast, and Square POS",
+      "Voice-initiated order processing for SMB customers",
+      "Real-time analytics dashboards with BigQuery, Recharts, and Cloud Run ingestion",
+    ],
+    link: "https://khanex.ai/",
+    featured: true,
+    period: "2025 - 2026",
+  },
+  {
+    id: 3,
+    title: "HardwareMCP",
+    subtitle: "Remote MCP Server for Physical Hardware",
+    description: "A public, no-auth remote MCP server that helps AI agents find the right MCP server for physical hardware: ESP32, Arduino, Raspberry Pi, 3D printers (Bambu, Prusa, Klipper), Home Assistant, cameras, Zigbee, and lab gear. Listed in the official MCP Registry.",
+    technologies: ["TypeScript", "MCP", "Streamable HTTP", "Vercel"],
+    highlights: [
+      "Catalog of 59 hardware MCP servers with install commands and client configs",
+      "Tools for search, device listing, and per-device recommendations (e.g. \"Bambu P1S\")",
+      "Works with Claude Code, Cursor, Claude Desktop, Grok Bot, and Muse",
+    ],
+    link: "https://hardwaremcp.khanex.ai",
+    github: "https://github.com/saadvz/hardwaremcp-mcp",
+    featured: true,
+    period: "2026",
+  },
+  {
+    id: 4,
+    title: "Pakistan Pandemic Response",
+    subtitle: "Data Science Research",
+    description: "Published a data science research project through Columbia University's CIC Student Working Group analyzing Pakistan's COVID-19 policy response, vaccination rollout, and public health intervention effectiveness.",
+    technologies: ["Python", "Pandas", "Matplotlib", "ARIMA/ARIMAX", "Colab"],
+    highlights: [
+      "Cleaned and analyzed public health datasets",
+      "ARIMA/ARIMAX forecasting to evaluate pandemic trends and policy impact",
+      "Written research paper plus an interactive Colab notebook",
+    ],
+    github: "https://github.com/saadvz/Analyzing-Pandemic_Responses_Project",
+    featured: true,
+    period: "2024",
+  },
+  {
+    id: 5,
+    title: "10DLC Ready",
+    subtitle: "A2P SMS Registration Prep Toolkit",
+    description: "A local-first Python CLI and set of agent skills that help a business prepare A2P 10DLC SMS registration with the AI assistant it already has: consent flow design, policy copy, sample messages, and draft Twilio registration fields with an evidence report.",
+    technologies: ["Python", "CLI", "MCP", "Agent Skills", "Twilio"],
+    highlights: [
+      "Plan, lint, audit, and export commands with PASS / NEEDS_REVIEW / BLOCK findings",
+      "Optional three-tool MCP connector so existing agents can call the same engine",
+      "No hosting or provider credentials required; network use only on explicit capture",
+    ],
+    period: "2026",
+  },
+  {
+    id: 6,
+    title: "Video Studio",
+    subtitle: "Claude Code Skill for Product Videos",
+    description: "A Claude Code skill that produces polished product videos entirely in code: an HTML timeline rendered frame by frame in Chromium, then encoded with ffmpeg. Supports text overlays, phone and chat mockups, generated sound effects and music, voiceover timing, and privacy blurring for real screen recordings.",
+    technologies: ["HTML/CSS", "Chromium", "ffmpeg", "Claude Code"],
+    highlights: [
+      "Investor trailers and product demos generated from a prompt",
+      "Layered privacy blurring for real screen recordings",
+      "Design rules that keep output away from generic \"AI slop\"",
+    ],
+    period: "2026",
+  },
+  {
+    id: 7,
+    title: "Urdu Voice Assistant",
+    subtitle: "Accessible Voice App for Urdu Speakers",
+    description: "An always-listening iOS voice assistant for Urdu speakers built on ElevenLabs Conversational AI. Users can ask for directions, call or text contacts, and have spoken conversations entirely in Urdu.",
+    technologies: ["Expo", "React Native", "TypeScript", "ElevenLabs"],
+    highlights: [
+      "Full Urdu speech recognition and text-to-speech",
+      "Deep links into Maps, Phone, Messages, and WhatsApp",
+      "Accessibility first: large targets, high contrast, RTL support",
+    ],
+    period: "2026",
+  },
+  {
+    id: 8,
+    title: "Supercharger Price Alerts",
+    subtitle: "Personal Tesla Charging Price Tracker",
+    description: "A small web app that emails you when a Tesla Supercharger near you drops to (or rises above) a target price per kWh. Runs entirely on free tiers.",
+    technologies: ["Next.js", "Upstash Redis", "GitHub Actions", "Resend", "OAuth (PKCE)"],
+    highlights: [
+      "PKCE OAuth login with automatic token refresh and rotation",
+      "Cron worker every 5 minutes compares live prices to your targets",
+      "Expected running cost: $0/month",
+    ],
+    period: "2026",
+  },
+  {
+    id: 9,
     title: "PureGlow Aesthetics",
     subtitle: "Full-Stack Web Application",
     description: "Developed a fully functional ReactJS website for PureGlow Aesthetics with responsive design, service galleries, appointment scheduling, client testimonials, and secure payment gateway integration.",
@@ -33,26 +130,10 @@ const projects = [
       "SEO optimized with enhanced animations",
     ],
     link: "https://pureglowaesthetics.uk/",
-    featured: true,
     period: "2024",
   },
   {
-    id: 3,
-    title: "Pakistan Pandemic Response",
-    subtitle: "Data Analysis & Research",
-    description: "Evaluated Pakistan's COVID-19 policies through detailed analysis of government interventions and vaccination efforts. Published research paper delivered to Columbia University's CIC Student Working Group.",
-    technologies: ["Python", "Pandas", "Matplotlib", "ARIMA/ARIMAX"],
-    highlights: [
-      "Policy effectiveness analysis",
-      "Predictive modeling with ARIMA/ARIMAX",
-      "Published academic research paper",
-    ],
-    github: "https://github.com/saadvz/Analyzing-Pandemic_Responses_Project",
-    featured: true,
-    period: "2024",
-  },
-  {
-    id: 4,
+    id: 10,
     title: "ManageLiveEvents",
     subtitle: "Senior Capstone Project",
     description: "Led an Agile Scrum project to develop an API for creating, analyzing, and managing live sports game footage. Achieved 2nd place in the capstone competition.",
@@ -65,7 +146,7 @@ const projects = [
     period: "2024",
   },
   {
-    id: 5,
+    id: 11,
     title: "QB Touchdown Predictor",
     subtitle: "Machine Learning Model",
     description: "Developed a machine learning model in Python using NFL play-by-play data to predict quarterback touchdown throws by analyzing key in-game statistics. Achieved accurate predictions validated through MSE and RMSE evaluations.",
@@ -79,7 +160,7 @@ const projects = [
     period: "2023",
   },
   {
-    id: 6,
+    id: 12,
     title: "TATA Data Visualization",
     subtitle: "Business Intelligence Project",
     description: "Completed a virtual data visualization project for TATA, creating executive-level questions for CEO and CMO, selecting appropriate visuals, and building interactive dashboards to present actionable business insights.",
@@ -92,7 +173,7 @@ const projects = [
     period: "2023",
   },
   {
-    id: 7,
+    id: 13,
     title: "SpaceX Launch Predictor",
     subtitle: "Data Science Capstone",
     description: "Comprehensive analysis and prediction of SpaceX launch outcomes using data science techniques. From data collection via API and web scraping, through EDA and visualization, to predictive modeling with machine learning. Includes an interactive Dash application.",
@@ -329,14 +410,14 @@ export default function Projects() {
             className="text-4xl md:text-5xl font-bold mt-2"
             style={{ color: "var(--foreground)" }}
           >
-            Personal Projects
+            Projects
           </h2>
           <p 
             className="mt-4 text-lg max-w-2xl"
             style={{ color: "var(--muted)" }}
           >
-            A collection of projects that showcase my skills in building innovative 
-            solutions across different domains.
+            AI agents, voice products, MCP servers, and SaaS tools I&apos;ve built and
+            shipped, plus earlier data science work.
           </p>
         </motion.div>
 

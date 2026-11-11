@@ -16,27 +16,27 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Saad Khan | Software Engineer & Product Innovator",
-  description: "Portfolio of Saad Khan - Software Engineer, Product Innovator, and MS Analytics student at Georgia Tech. Building innovative solutions at the intersection of technology and business.",
-  keywords: ["Software Engineer", "Product Engineer", "React", "Next.js", "TypeScript", "Georgia Tech", "Verizon"],
+  title: "Saad Khan | Founding Engineer & Technical Product Engineer",
+  description: "Portfolio of Saad Khan - Founding Engineer at VERA, former Verizon Product Engineer, and MS Computer Science student at Georgia Tech. Building AI voice agents, MCP tools, and SaaS products.",
+  keywords: ["Founding Engineer", "Product Engineer", "AI Agents", "Voice AI", "MCP", "React", "Next.js", "TypeScript", "Georgia Tech", "VERA", "Verizon"],
   authors: [{ name: "Saad Khan" }],
   openGraph: {
-    title: "Saad Khan | Software Engineer & Product Innovator",
-    description: "Portfolio of Saad Khan - Building innovative solutions at the intersection of technology and business.",
+    title: "Saad Khan | Founding Engineer & Technical Product Engineer",
+    description: "Portfolio of Saad Khan - Building AI voice agents, MCP tools, and SaaS products.",
     type: "website",
     images: [
       {
         url: "/portfolio_sketch.png",
         width: 1200,
         height: 630,
-        alt: "Saad Khan - Software Engineer & Product Innovator",
+        alt: "Saad Khan - Founding Engineer & Technical Product Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Saad Khan | Software Engineer & Product Innovator",
-    description: "Portfolio of Saad Khan - Building innovative solutions at the intersection of technology and business.",
+    title: "Saad Khan | Founding Engineer & Technical Product Engineer",
+    description: "Portfolio of Saad Khan - Building AI voice agents, MCP tools, and SaaS products.",
     images: ["/portfolio_sketch.png"],
   },
 };
