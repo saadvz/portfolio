@@ -16,12 +16,12 @@ const jetbrainsMono = JetBrains_Mono({
 });
 
 export const metadata: Metadata = {
-  title: "Saad Khan | Founding Engineer & Technical Product Engineer",
-  description: "Portfolio of Saad Khan - Founding Engineer at VERA, former Verizon Product Engineer, and MS Computer Science student at Georgia Tech. Building AI voice agents, MCP tools, and SaaS products.",
-  keywords: ["Founding Engineer", "Product Engineer", "AI Agents", "Voice AI", "MCP", "React", "Next.js", "TypeScript", "Georgia Tech", "VERA", "Verizon"],
+  title: "Saad Khan | Product Innovation Engineer",
+  description: "Portfolio of Saad Khan - Product Innovation Engineer focused on AI prototyping and agentic workflows. Former Founding Engineer at Threshold Care (VERA) and Verizon Product Engineer; MS Computer Science at Georgia Tech.",
+  keywords: ["Product Innovation Engineer", "Founding Engineer", "Agentic Workflows", "AI Agents", "Voice AI", "MCP", "React", "Next.js", "TypeScript", "Georgia Tech", "Threshold Care", "VERA", "Verizon"],
   authors: [{ name: "Saad Khan" }],
   openGraph: {
-    title: "Saad Khan | Founding Engineer & Technical Product Engineer",
+    title: "Saad Khan | Product Innovation Engineer",
     description: "Portfolio of Saad Khan - Building AI voice agents, MCP tools, and SaaS products.",
     type: "website",
     images: [
@@ -29,13 +29,13 @@ export const metadata: Metadata = {
         url: "/portfolio_sketch.png",
         width: 1200,
         height: 630,
-        alt: "Saad Khan - Founding Engineer & Technical Product Engineer",
+        alt: "Saad Khan - Product Innovation Engineer",
       },
     ],
   },
   twitter: {
     card: "summary_large_image",
-    title: "Saad Khan | Founding Engineer & Technical Product Engineer",
+    title: "Saad Khan | Product Innovation Engineer",
     description: "Portfolio of Saad Khan - Building AI voice agents, MCP tools, and SaaS products.",
     images: ["/portfolio_sketch.png"],
   },
