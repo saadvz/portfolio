@@ -17,21 +17,21 @@ type Experience = {
 
 const experiences: Experience[] = [
   {
-    company: "VERA",
-    location: "AI Voice Platform for Caregivers",
+    company: "Threshold Care",
+    location: "VERA: AI voice platform for family caregivers",
     roles: [
       {
         title: "Founding Engineer",
-        period: "Feb 2026 - Present",
-        current: true,
+        period: "Feb 2026 - Oct 2026",
+        current: false,
       },
     ],
     highlights: [
-      "Owned the product from prototype to a production caregiver wellness platform with a projected $1M ARR",
-      "Shipped the core caregiver journey: onboarding, phone verification and consent, scheduled check-in calls, post-call summaries, Shopify billing, and family sharing",
-      "Designed the production voice agent (Pipecat, Gemini Live, Twilio) with barge-in, voicemail handling, multilingual calls, Voice ID, and privacy hangups",
-      "Built AWS infrastructure (EC2, S3, Cognito, Terraform), CI/CD, PR previews, evals, synthetic canaries, and a stakeholder metrics dashboard",
-      "Presented weekly shareholder updates on growth, conversion, call quality, and risk",
+      "Took VERA from prototype to a production platform with a projected $1M ARR, owning roadmap and launch priorities",
+      "Defined and shipped the core caregiver journey: signup, client onboarding, phone verification and consent, scheduled AI check-in calls, post-call summaries, Shopify billing, family sharing, and agency outreach workflows",
+      "Designed the production conversational voice agent (Pipecat, Gemini Live, Twilio) with barge-in, voicemail handling, multilingual calls, Voice ID, consent, and wrong-person privacy hangups",
+      "Presented weekly shareholder updates on growth, conversion, call quality, and risk, turning metrics into product priorities",
+      "Built AWS infrastructure (EC2, S3, Cognito, Terraform), CI/CD, PR previews, evals, and synthetic canaries for reliable releases",
     ],
     icon: Building2,
   },
@@ -53,9 +53,9 @@ const experiences: Experience[] = [
     ],
     highlights: [
       "Turned ambiguous AI and cloud concepts into stakeholder-ready prototypes, advancing 3 ideas into leadership proposals",
-      "Built a platform-agnostic prototyping sandbox, cutting development costs by 90% and raising approval rates by 60%",
-      "Earned the Verizon Spotlight Award for an AI-integrated Android app mirroring Verizon Home workflows",
-      "Built an authenticated RAG-powered document search with Node.js, Firebase, and JWT",
+      "Won the Verizon Spotlight Award for building the Android app in an edge-AI demo (NVIDIA GPU in the home router): a live Verizon Home mirror with camera feeds and object-detection alerts, shown to Verizon VPs and NVIDIA",
+      "Built a platform-agnostic prototyping sandbox that brought development in-house, cutting costs 90% versus outsourced builds and raising approval rates 60% versus slide-based reviews",
+      "Prototyped a multi-tenant AI backend (Flowise, multimodal RAG) for document Q&A across personal cloud files, a network failover system, and a GPS and cell-signal router placement assistant",
     ],
     icon: Building2,
     projectsLink: "#verizon-projects",
@@ -137,7 +137,7 @@ const education = [
     school: "Georgia Institute of Technology",
     degree: "MS Computer Science",
     location: "Atlanta, GA",
-    period: "May 2028",
+    period: "Expected May 2027",
     icon: GraduationCap,
     logo: "/gt_logo.png",
   },
@@ -152,11 +152,24 @@ const education = [
   },
 ];
 
-const skills = {
-  languages: ["TypeScript", "JavaScript", "Python", "C#", "Java", "SQL", "React", "Next.js", "Node.js", "REST APIs", "Webhooks"],
-  frameworks: ["LLM APIs", "RAG", "Voice AI", "MCP", "Pipecat", "Gemini Live", "Twilio", "ElevenLabs", "Claude", "Cursor"],
-  tools: ["AWS", "Terraform", "GCP", "Cloud Run", "Firebase", "Supabase", "BigQuery", "Docker", "Git", "Power BI", "JIRA"],
-};
+const skillGroups = [
+  {
+    label: "Product & Prototyping",
+    items: ["Rapid Prototyping", "Product Requirements", "Roadmapping", "Stakeholder Demos", "Product Analytics"],
+  },
+  {
+    label: "AI & Agentic",
+    items: ["Agentic Workflows", "MCP Servers", "Tool Calling", "Human-in-the-Loop", "Multimodal RAG", "Prompt Engineering", "Evals"],
+  },
+  {
+    label: "AI Tools & Models",
+    items: ["OpenAI", "Gemini", "Claude Code", "Cursor", "Grok Bot", "LangChain", "Flowise", "Pipecat", "ElevenLabs", "Twilio"],
+  },
+  {
+    label: "Engineering & Cloud",
+    items: ["TypeScript", "Python", "JavaScript", "Java", "SQL", "React", "Next.js", "Node.js", "REST APIs", "Webhooks", "Pandas", "AWS", "Terraform", "GCP", "Cloud Run", "Firebase", "Supabase", "BigQuery", "Docker"],
+  },
+];
 
 const certifications = [
   { name: "IBM Data Science Professional Certificate", icon: Award, logo: "/IBM_logo.svg.png" },
@@ -421,75 +434,31 @@ export default function Experience() {
                 Technical Skills
               </h3>
               <div className="space-y-4">
-                <div>
-                  <p 
-                    className="text-xs font-semibold uppercase tracking-wider mb-2"
-                    style={{ color: "var(--muted)" }}
-                  >
-                    Engineering
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {skills.languages.map((skill) => (
-                      <span
-                        key={skill}
-                        className="px-2 py-1 text-xs rounded"
-                        style={{ 
-                          backgroundColor: "var(--background)",
-                          color: "var(--foreground)",
-                          border: "1px solid var(--border)"
-                        }}
-                      >
-                        {skill}
-                      </span>
-                    ))}
+                {skillGroups.map((group) => (
+                  <div key={group.label}>
+                    <p
+                      className="text-xs font-semibold uppercase tracking-wider mb-2"
+                      style={{ color: "var(--muted)" }}
+                    >
+                      {group.label}
+                    </p>
+                    <div className="flex flex-wrap gap-2">
+                      {group.items.map((skill) => (
+                        <span
+                          key={skill}
+                          className="px-2 py-1 text-xs rounded"
+                          style={{
+                            backgroundColor: "var(--background)",
+                            color: "var(--foreground)",
+                            border: "1px solid var(--border)"
+                          }}
+                        >
+                          {skill}
+                        </span>
+                      ))}
+                    </div>
                   </div>
-                </div>
-                <div>
-                  <p 
-                    className="text-xs font-semibold uppercase tracking-wider mb-2"
-                    style={{ color: "var(--muted)" }}
-                  >
-                    AI &amp; Voice
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {skills.frameworks.map((skill) => (
-                      <span
-                        key={skill}
-                        className="px-2 py-1 text-xs rounded"
-                        style={{ 
-                          backgroundColor: "var(--background)",
-                          color: "var(--foreground)",
-                          border: "1px solid var(--border)"
-                        }}
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
-                <div>
-                  <p 
-                    className="text-xs font-semibold uppercase tracking-wider mb-2"
-                    style={{ color: "var(--muted)" }}
-                  >
-                    Cloud &amp; Data
-                  </p>
-                  <div className="flex flex-wrap gap-2">
-                    {skills.tools.map((skill) => (
-                      <span
-                        key={skill}
-                        className="px-2 py-1 text-xs rounded"
-                        style={{ 
-                          backgroundColor: "var(--background)",
-                          color: "var(--foreground)",
-                          border: "1px solid var(--border)"
-                        }}
-                      >
-                        {skill}
-                      </span>
-                    ))}
-                  </div>
-                </div>
+                ))}
               </div>
             </motion.div>
 

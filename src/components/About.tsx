@@ -66,15 +66,16 @@ export default function About() {
               style={{ color: "var(--muted)" }}
             >
               <p>
-                I&apos;m a technical product engineer and the Founding Engineer at VERA, where I
-                build an AI voice platform that supports family caregivers. I&apos;m also pursuing my
+                I&apos;m a product innovation engineer focused on agentic workflows and voice AI. Most
+                recently I was the Founding Engineer at Threshold Care, where I took VERA, an AI voice
+                platform for family caregivers, from prototype to production. I&apos;m also pursuing my
                 MS in Computer Science at Georgia Tech.
               </p>
               <p>
-                Before VERA, I spent almost two years on Verizon&apos;s product innovation team turning
+                Before that, I spent almost two years on Verizon&apos;s product innovation team turning
                 early concepts into prototypes leadership could say yes to, and I built KHANEX, an AI
-                SaaS platform for small businesses. Lately I&apos;m focused on agentic tools: MCP servers
-                and bring-your-own-agent products like Property Core.
+                SaaS platform for small businesses. Right now I&apos;m building Property Core, which gives
+                AI agents the tools to run short-term rental operations.
               </p>
               <p>
                 When I&apos;m not building, you&apos;ll find me volunteering with local organizations

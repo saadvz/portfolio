@@ -63,7 +63,7 @@ export default function Hero() {
             className="text-sm font-semibold tracking-widest uppercase"
             style={{ color: "var(--muted)" }}
           >
-            Founding Engineer @ VERA
+            Product Innovation Engineer · AI Prototyping &amp; Agentic Workflows
           </motion.p>
 
           {/* Description */}
@@ -74,8 +74,8 @@ export default function Hero() {
             className="text-lg max-w-md leading-relaxed"
             style={{ color: "var(--muted)" }}
           >
-            Technical product engineer turning ambiguous ideas into AI- and cloud-powered
-            products: voice agents, MCP tools, and SaaS workflows. MS Computer Science @ Georgia Tech.
+            I turn early concepts into working AI prototypes and shipped products, from a
+            production AI voice platform to agentic MCP tools. MS Computer Science @ Georgia Tech.
           </motion.p>
 
           {/* CTA Button */}

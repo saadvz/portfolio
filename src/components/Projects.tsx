@@ -8,17 +8,17 @@ const projects = [
   {
     id: 1,
     title: "Property Core",
-    subtitle: "Bring-Your-Own AI Operations for Short-Term Rental Hosts",
-    description: "An AI operations platform that runs the day-to-day work of a short-term rental for a remote host. The host talks to their own agent (Grok Bot or Muse); Property Core gives that agent its instructions, keeps every record, and holds the guardrails in code. Piloting with several Airbnb hosts on live properties.",
-    technologies: ["TypeScript", "Node.js", "MCP", "Twilio SMS", "AI Agents"],
+    subtitle: "AI Agent Operations for Short-Term Rentals",
+    description: "An AI operations platform that runs the day-to-day work of a short-term rental for a remote host. The host talks to their own agent (like Grok Bot); Property Core gives that agent MCP tools, keeps every record, and holds the guardrails in code. Piloting with several Airbnb hosts on live properties, using their pain points and use cases to set product priorities.",
+    technologies: ["TypeScript", "Node.js", "MCP", "Twilio", "AI Agents"],
     highlights: [
-      "Cleaner Core: reads booking calendars, texts cleaners for each turnover, releases door codes only after checkout",
-      "Supply Core: approval rules, spending caps, and go/hold decisions on every agent-built cart, with a full order log",
-      "Safety gates enforced in code and checked by CI on every pull request",
+      "MCP tools that let AI agents distribute access codes to smart locks for each turnover",
+      "Fully automated end-to-end supply runs with spending caps and audit logs",
+      "Fixer Core: agents coordinate repairs by texting and calling the host's approved pros, with human-in-the-loop approval on every booking and each job and cost logged",
     ],
     github: "https://github.com/saadvz/PropertyCore",
     featured: true,
-    period: "2026",
+    period: "Oct 2026 - Present",
   },
   {
     id: 2,
@@ -33,7 +33,7 @@ const projects = [
     ],
     link: "https://khanex.ai/",
     featured: true,
-    period: "2025 - 2026",
+    period: "Aug 2025 - Feb 2026",
   },
   {
     id: 3,
@@ -54,7 +54,7 @@ const projects = [
   {
     id: 4,
     title: "Pakistan Pandemic Response",
-    subtitle: "Data Science Research",
+    subtitle: "Columbia University CIC Research",
     description: "Published a data science research project through Columbia University's CIC Student Working Group analyzing Pakistan's COVID-19 policy response, vaccination rollout, and public health intervention effectiveness.",
     technologies: ["Python", "Pandas", "Matplotlib", "ARIMA/ARIMAX", "Colab"],
     highlights: [
@@ -64,7 +64,7 @@ const projects = [
     ],
     github: "https://github.com/saadvz/Analyzing-Pandemic_Responses_Project",
     featured: true,
-    period: "2024",
+    period: "Feb 2024 - Apr 2024",
   },
   {
     id: 5,
@@ -190,6 +190,20 @@ const projects = [
 
 // Verizon Innovation Projects
 const verizonProjects = [
+  {
+    id: 100,
+    title: "Edge-AI Home Vision Demo",
+    subtitle: "Verizon Spotlight Award Winner",
+    description: "Built the Android app for an edge-AI demo running on an NVIDIA GPU inside the home router: a live Verizon Home mirror with camera feeds and object-detection alerts (\"you left your wallet\"). Shown to Verizon VPs and NVIDIA.",
+    technologies: ["Android", "Java", "Edge AI", "NVIDIA GPU", "Object Detection"],
+    highlights: [
+      "Live camera feeds mirrored from Verizon Home",
+      "Real-time object-detection alerts pushed to the phone",
+      "Earned the Verizon Spotlight Award for innovation and user impact",
+    ],
+    period: "2024 - 2026",
+    verizonProject: true,
+  },
   {
     id: 101,
     title: "Innovation Lab Platform",
